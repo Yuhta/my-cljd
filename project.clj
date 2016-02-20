@@ -3,10 +3,10 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[cljd "0.1.0-SNAPSHOT"]
+  :dependencies [[com.martiansoftware/nailgun-server "0.9.1"]
                  [mwdict "0.1.0-SNAPSHOT"]]
   :plugins [[lein-bin "0.3.5"]]
-  :main ^:skip-aot my-cljd.core
+  :main com.martiansoftware.nailgun.NGServer
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :bin {:name "cljd"})
